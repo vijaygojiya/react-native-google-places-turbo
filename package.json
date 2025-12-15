@@ -1,6 +1,6 @@
 {
   "name": "react-native-google-places-turbo",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "React Native Google Places Autocomplete native module using TurboModules with Swift (iOS) and Kotlin (Android). New Architecture and bridgeless ready.",
   "main": "./lib/module/index.js",
   "types": "./lib/typescript/src/index.d.ts",
