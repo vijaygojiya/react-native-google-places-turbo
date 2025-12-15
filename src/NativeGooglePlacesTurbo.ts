@@ -1,7 +1,14 @@
 import { TurboModuleRegistry, type TurboModule } from 'react-native';
+import type { Place } from './types';
 
 export interface Spec extends TurboModule {
-  multiply(a: number, b: number): number;
+  //Warnign: type Object is unsafe
+  openAutocompleteModal(options: Object): Promise<Place>;
+  initialize(
+    key: string,
+    onSuccess: (r: string) => void,
+    onError: (e: string) => void
+  ): void;
 }
 
 export default TurboModuleRegistry.getEnforcing<Spec>('GooglePlacesTurbo');
